@@ -17,3 +17,9 @@ http://localhost/[name of the folder]/index.html
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 Please make sure to update tests as appropriate.
+
+## Screenshots
+![Alt text](https://github.com/sujoyyyy/Sales-Page-Template/blob/main/screenshots/Capture.JPG)
+![Alt text](https://github.com/sujoyyyy/Sales-Page-Template/blob/main/screenshots/Capture-2.JPG)
+![Alt text](https://github.com/sujoyyyy/Sales-Page-Template/blob/main/screenshots/Capture-3.JPG)
+![Alt text](https://github.com/sujoyyyy/Sales-Page-Template/blob/main/screenshots/photo.JPG)
