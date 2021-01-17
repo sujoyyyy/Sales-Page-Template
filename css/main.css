@@ -1,0 +1,136 @@
+body {
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+  from { opacity: 1; }
+  to   { opacity: 1; }
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/karla/v14/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaHUlKd7c.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/karla/v14/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-extrabold.woff2") format("woff2"), /* Modern browsers */
+  url("../fonts/manrope/manrope-extrabold.woff") format("woff"), /* Legacy browsers */
+  url("../fonts/manrope/manrope-extrabold.otf") format("truetype"); /* Android, iOS */
+  font-style: normal;
+  font-weight: 800; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-bold.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-bold.woff") format("woff"),
+  url("../fonts/manrope/manrope-bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-semibold.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-semibold.woff") format("woff"),
+  url("../fonts/manrope/manrope-semibold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-medium.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-medium.woff") format("woff"),
+  url("../fonts/manrope/manrope-medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-regular.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-regular.woff") format("woff"),
+  url("../fonts/manrope/manrope-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-light.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-light.woff") format("woff"),
+  url("../fonts/manrope/manrope-light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-thin.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-thin.woff") format("woff"),
+  url("../fonts/manrope/manrope-thin.otf") format("truetype");
+  font-style: normal;
+  font-weight: 200; }
+/* Header Section */
+body{
+  background-image: url('../images/file.png');
+}
+
+.tf-header {
+  position: relative;
+  background-size: cover;
+  height: 650px;
+  font-family: 'Manrope',sans-serif;
+  margin-top: 2.5cm;
+  color: rgba(255, 255, 255, 0.98); }
+  .tf-header::before {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    content: ' '; }
+  .tf-header h1 {
+  
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .tf-header .nav {
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .tf-header .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important; }
+    .tf-header .nav-link:hover {
+      color: white !important; }
+  .tf-header h2 {
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 1px; }
+  .tf-header .tf-hh-col {
+    padding-right: 0.5rem !important; }
+  @media (max-width: 1199.98px) {
+    .tf-header h2 {
+
+      margin-top: 3rem;
+      font-size: 42px; } }
+  @media (max-width: 991.98px) {
+    .tf-header h2 {
+      margin-top: 2rem;
+      font-size: 30px; } }
+  @media (max-width: 575.98px) {
+    .tf-header h1 {
+      width: 100%;
+      text-align: center; }
+    .tf-header #navbar {
+      margin: 0 auto; }
+    .tf-header h2 {
+      margin-top: 1rem;
+      font-size: 24px; } }
+  @media (max-width: 561px) {
+    .tf-header .tf-hh-col {
+      padding-right: 0 !important; } }
+
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order form</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      @font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/karla/v14/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaHUlKd7c.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/karla/v14/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-extrabold.woff2") format("woff2"), /* Modern browsers */
+  url("../fonts/manrope/manrope-extrabold.woff") format("woff"), /* Legacy browsers */
+  url("../fonts/manrope/manrope-extrabold.otf") format("truetype"); /* Android, iOS */
+  font-style: normal;
+  font-weight: 800; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-bold.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-bold.woff") format("woff"),
+  url("../fonts/manrope/manrope-bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-semibold.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-semibold.woff") format("woff"),
+  url("../fonts/manrope/manrope-semibold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-medium.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-medium.woff") format("woff"),
+  url("../fonts/manrope/manrope-medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-regular.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-regular.woff") format("woff"),
+  url("../fonts/manrope/manrope-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-light.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-light.woff") format("woff"),
+  url("../fonts/manrope/manrope-light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-thin.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-thin.woff") format("woff"),
+  url("../fonts/manrope/manrope-thin.otf") format("truetype");
+  font-style: normal;
+  font-weight: 200; }
+      html, body {
+      height: 100%;
+      background-color: #4b1543;
+      }
+      body, input, select { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+      }
+      h1, h3 {
+      font-weight: 400;
+      }
+      h1 {
+      font-size: 32px;
+      font-family: 'Manrope',sans-serif;
+      font-weight: 800;
+      }
+      h3 {
+      color: #1c87c9;
+      }
+      .main-block, .info {
+      display: flex;
+      flex-direction: column;
+      }
+      .main-block {
+      justify-content: center;
+      align-items: center;
+      width: 100%; 
+      min-height: 100%;
+      background-image: url('../images/form.png');
+      background-size: cover;
+      }
+      form {
+      width: 80%;
+      padding: 25px;
+      margin-bottom: 20px;
+      background-color: #093145; border-radius: 0.2cm;
+      border-radius: 0.3cm;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 20px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      font-family: 'Karla',sans-serif;
+      font-weight: 300;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .metod {
+      display: flex; 
+      }
+      input[type=radio] {
+      display: none;
+      }
+      label.radio {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+      text-indent: 32px;
+      cursor: pointer;
+      }
+      label.radio:before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      border: 2px solid #1c87c9;
+      }
+      label.radio:after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 4px;
+      top: 5px;
+      left: 5px;
+      border-bottom: 3px solid #1c87c9;
+      border-left: 3px solid #1c87c9;
+      transform: rotate(-45deg);
+      opacity: 0;
+      }
+      input[type=radio]:checked + label:after {
+      opacity: 1;
+      }
+      button {
+      display: block;
+      width: 200px;
+      padding: 10px;
+      margin: 20px auto 0;
+      border: none;
+      border-radius: 5px; 
+      background: #1c87c9; 
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      }
+      button:hover {
+      background: #095484;
+      }
+      @media (min-width: 568px) {
+      .info {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      }
+      input {
+      width: 46%;
+      }
+      input.fname {
+      width: 100%;
+      }
+      select {
+      width: 120%;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+      <h1 style="font-family: 'Karla', sans-serif;">Product Order Form</h1>
+      <form name="MyForm" action="./action.php" method="POST" >
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="number" name="phone" placeholder="Phone number" required>
+          <input type="text" name="address" placeholder="Enter your address" required>
+        </div>
+        <h3 style="font-family: 'Karla',sans-serif;">Delivery Method</h3>
+        <div class="metod">
+          <div> 
+            <input type="radio" value="pickup" id="radioOne" name="metod"/>
+            <label for="radioOne" class="radio" style="font-family: 'Karla',sans-serif;"">For pick up</label>
+          </div>
+          <div>
+            <input type="radio" value="deliver" id="radioTwo" name="metod" />
+            <label for="radioTwo" class="radio" style="font-family: 'Karla',sans-serif;">For delivery</label>
+          </div>
+        </div>
+        <button href="/" class="button" style="font-family: 'Karla',sans-serif; font-size: 18px;">Submit</button>
+      </form>
+    </div>
+    <script type="text/javascript" language="javascript">
+    $(window).bind("pageshow", function() {
+    var form = $('MyForm'); 
+    // let the browser natively reset defaults
+    form[0].reset();
+});
+        </script>
+
+  </body>
+</html>
